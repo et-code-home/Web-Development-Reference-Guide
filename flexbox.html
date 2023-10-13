@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Reference Guide</title>
+</head>
+<body>
+  <h1>Flexbox Reference Guide</h1>
+
+  <h2 id="basic-concepts">Basic Concepts</h2>
+  <ul>
+    <li><strong>Flex Container:</strong> An element set to <code>display: flex;</code> or <code>display: inline-flex;</code>. It serves as the parent for the flex items.</li>
+    <li><strong>Flex Items:</strong> The child elements of a flex container, which are laid out within the container.</li>
+    <li><strong>Main Axis:</strong> The primary axis along which flex items are laid out. It can be horizontal (default) or vertical.</li>
+    <li><strong>Cross Axis:</strong> The axis perpendicular to the main axis.</li>
+  </ul>
+
+  <h2 id="parent-container-properties">Parent Container Properties</h2>
+  <ul>
+    <li><strong><code>display</code></strong>: <code>display: flex;</code> creates a flex container. <code>display: inline-flex;</code> creates an inline-level flex container.</li>
+    <li><strong><code>flex-direction</code></strong>: <code>flex-direction: row;</code> lays items out in a row (default), <code>flex-direction: row-reverse;</code> in reverse order, <code>flex-direction: column;</code> in a column, and <code>flex-direction: column-reverse;</code> in a reverse column order.</li>
+    <li><strong><code>justify-content</code></strong>: <code>justify-content: flex-start;</code> packs items toward the start of the main axis, <code>justify-content: flex-end;</code> toward the end, <code>justify-content: center;</code> centers them, <code>justify-content: space-between;</code> evenly distributes them with space between, <code>justify-content: space-around;</code> with space around, and <code>justify-content: space-evenly;</code> with space around and between.</li>
+    <li><strong><code>align-items</code></strong>: <code>align-items: stretch;</code> stretches items to fill the cross-axis (default), <code>align-items: flex-start;</code> aligns items at the start of the cross-axis, <code>align-items: flex-end;</code> at the end, <code>align-items: center;</code> centers them, and <code>align-items: baseline;</code> aligns based on their baselines.</li>
+    <li><strong><code>flex-wrap</code></strong>: <code>flex-wrap: nowrap;</code> forces items onto a single line (default), <code>flex-wrap: wrap;</code> wraps items to the next line if needed, and <code>flex-wrap: wrap-reverse;</code> wraps items in reverse order.</li>
+    <li><strong><code>align-content</code></strong>: <code>align-content: stretch;</code> stretches lines to fill the container (default), <code>align-content: flex-start;</code> packs lines at the start, <code>align-content: flex-end;</code> at the end, <code>align-content: center;</code> centers lines, <code>align-content: space-between;</code> evenly distributes lines with space between, and <code>align-content: space-around;</code> with space around.</li>
+  </ul>
+
+  <h2 id="child-elements-properties">Child Elements Properties</h2>
+  <ul>
+    <li><strong><code>flex</code></strong>: <code>flex: 1;</code> equally distributes available space among flex items (default), <code>flex: &lt;positive number&gt;;</code> specifies the ratio of how space should be distributed, and <code>flex: 0;</code> prevents flex items from growing.</li>
+    <li><strong><code>order</code></strong>: <code>order: 0;</code>
