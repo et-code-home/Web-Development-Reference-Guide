@@ -1,6 +1,6 @@
-# Fun Learning Web Development
+# Guide for Learning Web Development
 
-Welcome to the Fun Learning Web Development project! This project serves as a reference guide for two essential web development concepts: Flexbox and CSS Grid. It's designed to help learners understand and implement these layout techniques in a fun and engaging way.
+This project serves as a reference guide for essential web development concepts.
 
 ## Table of Contents
 - [Flexbox Reference Guide](#flexbox-reference-guide)
