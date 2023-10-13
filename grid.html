@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grid Reference Guide</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>CSS Grid Reference Guide</h1>
+
+  <h2 id="basic-concepts">Basic Concepts</h2>
+  <ul>
+    <li><strong>Grid Container:</strong> An element set to <code>display: grid;</code>. It serves as the parent for the grid items.</li>
+    <li><strong>Grid Items:</strong> The child elements of a grid container, which are laid out within the grid.</li>
+    <li><strong>Grid Lines:</strong> The horizontal and vertical lines that make up the grid, forming rows and columns.</li>
+    <li><strong>Grid Track:</strong> The space between two adjacent grid lines, forming rows and columns.</li>
+  </ul>
+
+  <h2 id="parent-container-properties">Parent Container Properties</h2>
+  <ul>
+    <li><strong><code>display</code></strong>: <code>display: grid;</code> creates a grid container. <code>display: inline-grid;</code> creates an inline-level grid container.</li>
+    <li><strong><code>grid-template-columns</code></strong>: Defines the size and number of columns in the grid.</li>
+    <li><strong><code>grid-template-rows</code></strong>: Defines the size and number of rows in the grid.</li>
+    <li><strong><code>grid-template-areas</code></strong>: Defines named grid areas for the layout.</li>
+    <li><strong><code>grid-gap</code></strong>: Specifies the gap between rows and columns.</li>
+    <li><strong><code>justify-items</code></strong>: Aligns grid items on the horizontal axis (X-axis).</li>
+    <li><strong><code>align-items</code></strong>: Aligns grid items on the vertical axis (Y-axis).</li>
+  </ul>
+
+  <h2 id="child-elements-properties">Child Elements Properties</h2>
+  <ul>
+    <li><strong><code>grid-column</code></strong>: Determines the start and end position of an item along the columns.</li>
+    <li><strong><code>grid-row</code></strong>: Determines the start and end position of an item along the rows.</li>
+    <li><strong><code>grid-area</code></strong>: Assigns an item to a named grid area.</li>
+    <li><strong><code>justify-self</code></strong>: Aligns an item within its grid cell on the horizontal axis.</li>
+    <li><strong><code>align-self</code></strong>: Aligns an item within its grid cell on the vertical axis.</li>
+  </ul>
+
+  <h2 id="common-use-cases">Common Use Cases</h2>
+  <ul>
+    <li><strong>Creating a Basic Grid:</strong>
+      <pre><code>
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+      </code></pre>
+    </li>
+    <li><strong>Creating Grid Areas:</strong>
+      <pre><code>
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "header header"
+    "main sidebar";
+}
+.header {
+  grid-area: header;
+}
+.sidebar {
+  grid-area: sidebar;
+}
+      </code></pre>
+    </li>
+    <li><strong>Centering Content:</strong>
+      <pre><code>
+.container {
+  display: grid;
+  place-items: center;
+}
+      </code></pre>
+    </li>
+  </ul>
+
+  <h2 id="resources">Resources</h2>
+  <ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts">MDN Web Docs: CSS Grid</a></li>
+  </ul>
+</body>
+</html>
